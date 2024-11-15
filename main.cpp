@@ -1,7 +1,9 @@
 #include <iostream>
 #include <vector>
-
+#include <string>
+#include <algorithm>
 #include <fstream>
+
 
 using namespace std;
 
@@ -39,14 +41,16 @@ void countfile(vector<string>& stroki)
     }
     wcout << L"Общее количество символов в файле: " << cnt << endl;
 }
-void sortfile(vector<string> stroki)
+void sortfile(vector<string>& stroki)
 {
-
+    sort(stroki.begin(), stroki.end());
 }
-void printfile(vector<string> stroki)
+void printfile(vector<string>& stroki)
 {
-
+    for (int i=0; i < stroki.size(); i++)    {
+        cout << stroki[i] << endl;    }
 }
+
 int main()
 {
      setlocale(LC_ALL, "Russian");
