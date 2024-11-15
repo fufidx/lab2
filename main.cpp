@@ -20,7 +20,12 @@ void writefile(vector<string>& stroki)
 }
 void countfile(vector<string>& stroki)
 {
+    int cnt = 0;
 
+    for (const auto& item : stroki) {
+        cnt += item.size();
+    }
+    wcout << L"Общее количество символов в файле: " << cnt << endl;
 }
 void sortfile(vector<string> stroki)
 {
