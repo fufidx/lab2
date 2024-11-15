@@ -13,6 +13,12 @@ void readfile(vector<string>& stroki)
     {
         cout<<"file open"<<endl;
 
+       string stroka;
+       while (getline(file,stroka))
+       {
+          stroki.push_back(stroka);
+       }
+
     }
 }
 void writefile(vector<string> stroki)
