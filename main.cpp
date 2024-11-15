@@ -20,7 +20,7 @@ void countfile(vector<string> stroki)
 }
 void sortfile(vector<string>& stroki)
 {
-
+    sort(stroki.begin(), stroki.end());
 }
 void printfile(vector<string>& stroki)
 {
