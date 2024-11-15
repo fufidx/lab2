@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-
-
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -18,14 +18,16 @@ void countfile(vector<string> stroki)
 {
 
 }
-void sortfile(vector<string> stroki)
+void sortfile(vector<string>& stroki)
 {
 
 }
-void printfile(vector<string> stroki)
+void printfile(vector<string>& stroki)
 {
-
+    for (int i=0; i < stroki.size(); i++)    {
+        cout << stroki[i] << endl;    }
 }
+
 int main()
 {
      vector<string> stroki{};
