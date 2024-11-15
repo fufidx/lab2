@@ -54,7 +54,7 @@ void printfile(vector<string>& stroki)
 int main()
 {
      setlocale(LC_ALL, "Russian");
-     vector<string> stroki{"q", "qwer", "qw", "qwertyuio", "qwerty", "qwe", "qwertyu", "qwertyuiop"};
+     vector<string> stroki;
      readfile(stroki);
      writefile(stroki);
      countfile(stroki);
