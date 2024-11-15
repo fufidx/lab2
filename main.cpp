@@ -9,7 +9,11 @@ using namespace std;
 void readfile(vector<string>& stroki)
 {
     ifstream file("text.txt");
+    if (file.is_open())
+    {
+        cout<<"file open"<<endl;
 
+    }
 }
 void writefile(vector<string> stroki)
 {
