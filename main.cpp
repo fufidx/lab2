@@ -1,13 +1,14 @@
 #include <iostream>
 #include <vector>
-
+#include <fstream>
 
 
 using namespace std;
 
 
-void readfile(vector<string> stroki)
+void readfile(vector<string>& stroki)
 {
+    ifstream file("text.txt");
 
 }
 void writefile(vector<string> stroki)
