@@ -1,14 +1,25 @@
 #include <iostream>
 #include <vector>
-
+#include <fstream>
 
 
 using namespace std;
 
 
-void readfile(vector<string> stroki)
+void readfile(vector<string>& stroki)
 {
+    ifstream file("text.txt");
+    if (file.is_open())
+    {
+        cout<<"file open"<<endl;
 
+       string stroka;
+       while (getline(file,stroka))
+       {
+          stroki.push_back(stroka);
+       }
+
+    }
 }
 void writefile(vector<string> stroki)
 {
